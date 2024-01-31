@@ -15,6 +15,8 @@ dir %userprofile%\Documents\"Tencent Files"\%%i\nt_qq\nt_data\Pic\    /a:d /b  >
 for /f %%j in (%userprofile%\tmp.txt) do rd "%userprofile%\Documents\Tencent Files\%%i\nt_qq\nt_data\Pic\%%j" /s /q 
 dir %userprofile%\Documents\"Tencent Files"\%%i\nt_qq\nt_data\Video\    /a:d /b  >%userprofile%\tmp.txt
 for /f %%j in (%userprofile%\tmp.txt) do rd "%userprofile%\Documents\Tencent Files\%%i\nt_qq\nt_data\Video\%%j" /s /q 
+dir %userprofile%\Documents\"Tencent Files"\%%i\nt_qq\nt_data\Emoji\emoji-recv\    /a:d /b  >%userprofile%\tmp.txt
+for /f %%j in (%userprofile%\tmp.txt) do rd "%userprofile%\Documents\Tencent Files\%%i\nt_qq\nt_data\Emoji\emoji-recv\%%j" /s /q 
 )
 
 ECHO 清理临时文件...
